@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title>Jogo da Velha</title>
+		<script type="text/javascript" src="application.js"></script>
+		<link href="application.css" rel="stylesheet" type="text/css" />
+	</head>	
+	<body>
+		<div class="modoJogo">
+			<input type="submit" value="Versus" id="1" onclick="verificarModoDeJogo(this)" />
+			<input type="submit" value="Arcade" id="2" onclick="verificarModoDeJogo(this)" />
+			<input type="submit" value="Reset" onclick="resetJogo()"/>
+		</div>	
+		<div>
+			<table class="placar">
+				<tr>
+					<td>Jogador 1</td>
+					<td>|</td>
+					<td>Jogador 2</td>
+				</tr>
+				<tr>
+					<td id="j_1"></td>
+					<td></td>
+					<td id="j_2"></td>
+				</tr>
+			</table>			
+		</div>	
+		<div>
+			<table class="tabuleiro">
+				<tr>
+					<td id="c_0_0" onclick="marcar(this)"></td>
+					<td id="c_0_1" onclick="marcar(this)"></td>
+					<td id="c_0_2" onclick="marcar(this)"></td>
+				</tr>	
+				<tr>
+					<td id="c_1_0" onclick="marcar(this)"></td>
+					<td id="c_1_1" onclick="marcar(this)"></td>
+					<td id="c_1_2" onclick="marcar(this)"></td>
+				</tr>	
+				<tr>
+					<td id="c_2_0" onclick="marcar(this)"></td>
+					<td id="c_2_1" onclick="marcar(this)"></td>
+					<td id="c_2_2" onclick="marcar(this)"></td>
+				</tr>	
+			</table>	
+		</div>
+		<div class="limpar">
+			<input type="submit" value="Limpar Tabuleiro" onclick="limparTabuleiro()"/>
+		</div>
+	</body>	
+</html>

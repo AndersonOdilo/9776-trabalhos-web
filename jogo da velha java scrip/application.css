@@ -1,0 +1,62 @@
+body{
+	background: #F8F8F8;
+}
+
+.modoJogo{
+	margin: auto;
+	width: 190px;
+}
+
+.limpar{
+	margin: auto;
+	width: 100px;
+}
+
+input[type=submit]{
+	margin: auto;
+	font-size: 15px;
+	background: #f5ede3;
+	border-radius: 10px;
+}
+
+.placar{
+	margin: auto;
+	font-size: 20px;
+}
+
+.placar tr td{
+	text-align: center;
+}
+
+.tabuleiro{
+	margin: auto;
+	margin-bottom: 15px;
+	border: none;
+	background: #e0cfad;
+}
+
+.tabuleiro tr td{
+	border-right: solid;
+	border-color: #695a46;
+	font-size: 70px;
+	text-align: center;
+	width: 150px;
+	height: 150px;
+}
+
+.tabuleiro tr td:hover{
+	background: #f5ede3;
+}
+
+.tabuleiro tr td:last-child{
+	border-right: none;
+}
+
+.tabuleiro tr td{
+	border-bottom: solid;
+	border-color: #695a46;
+}
+
+.tabuleiro tr:last-child td{
+	border-bottom: none;
+}
